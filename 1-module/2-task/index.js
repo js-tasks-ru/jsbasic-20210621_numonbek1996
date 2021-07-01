@@ -3,9 +3,7 @@ function print(text) {
 }
 
 function isValid(name) {
-  // if (name !== "" && name !== "  " && name.length >= 4) {
-  //   return name;
-  return !!name && !name.includes(" ") && name.length >= 4; //код приподователя
+  return !!name && !name.includes(" ") && name.length >= 4;
 }
 
 function sayHello() {
