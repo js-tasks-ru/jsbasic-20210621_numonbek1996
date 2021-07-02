@@ -1,6 +1,14 @@
 function sumSalary(salaries) {
-  if (salaries.Ann == "" && salaries.Pete == "" && salaries.John == "") {
-    return false;
+  let sumOfSalaries = 0;
+
+  for (let key in salaries) {
+    let isSalary =
+      typeof salaries[key] === "number" && Number.isFinite(salaries[key]);
+
+    if (isSalary) {
+      sumOfSalaries += salaries[key];
+    }
   }
-  return salaries.Ann + salaries.Pete + salaries.John;
+
+  return sumOfSalaries;
 }
