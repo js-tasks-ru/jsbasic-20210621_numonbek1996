@@ -1,7 +1,8 @@
 function makeFriendsList(friends) {
   // ваш код...
-  document.body.innerHTML = `<ul class="name"></ul>`;
-  const list = document.querySelector(".name");
+  document.body.innerHTML = `<ul></ul>`;
+  const list = document.querySelector("ul");
+
   // for (key in friends) {
   //   let row = document.createElement("li");
   //   row.innerHTML = `<li>${key}</li>`;
