@@ -1,22 +1,6 @@
 function initCarousel() {
   let currentSlideNumber = 0;
   let slidesAmount = 4;
-<<<<<<< HEAD
-  let elem = document.querySelector("[data-carousel-holder]");
-
-  let carouselInnerElem = elem.querySelector(".carousel__inner");
-  let carouselArrowRight = elem.querySelector(".carousel__arrow_right");
-  let carouselArrowLeft = elem.querySelector(".carousel__arrow_left");
-
-  update();
-
-  elem.onclick = ({ target }) => {
-    if (target.closest(".carousel__arrow_right")) {
-      next();
-    }
-
-    if (target.closest(".carousel__arrow_left")) {
-=======
   let elem = document.querySelector('[data-carousel-holder]');
 
   let carouselInnerElem = elem.querySelector('.carousel__inner');
@@ -51,17 +35,7 @@ function initCarousel() {
     carouselInnerElem.style.transform = `translateX(${offset}px)`;
 
     if (currentSlideNumber == slidesAmount - 1) {
-<<<<<<< HEAD
-      carouselArrowRight.style.display = "none";
-    } else {
-      carouselArrowRight.style.display = "";
-    }
 
-    if (currentSlideNumber == 0) {
-      carouselArrowLeft.style.display = "none";
-    } else {
-      carouselArrowLeft.style.display = "";
-=======
       carouselArrowRight.style.display = 'none';
     } else {
       carouselArrowRight.style.display = '';
@@ -71,7 +45,7 @@ function initCarousel() {
       carouselArrowLeft.style.display = 'none';
     } else {
       carouselArrowLeft.style.display = '';
->>>>>>> b6c3175d6006132a838c29adee4a9a8a0968ce61
+
     }
   }
 }
