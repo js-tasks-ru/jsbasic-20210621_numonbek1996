@@ -15,6 +15,7 @@ function initCarousel() {
     }
 
     if (target.closest('.carousel__arrow_left')) {
+>>>>>>> b6c3175d6006132a838c29adee4a9a8a0968ce61
       prev();
     }
   };
@@ -34,6 +35,7 @@ function initCarousel() {
     carouselInnerElem.style.transform = `translateX(${offset}px)`;
 
     if (currentSlideNumber == slidesAmount - 1) {
+
       carouselArrowRight.style.display = 'none';
     } else {
       carouselArrowRight.style.display = '';
@@ -43,6 +45,7 @@ function initCarousel() {
       carouselArrowLeft.style.display = 'none';
     } else {
       carouselArrowLeft.style.display = '';
+
     }
   }
 }

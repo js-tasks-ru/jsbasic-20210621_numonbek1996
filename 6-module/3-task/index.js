@@ -1,10 +1,10 @@
 import createElement from '../../assets/lib/create-element.js';
+import escapeHtml from '../../assets/lib/escape-html.js';
 
 export default class Carousel {
 
   constructor(slides) {
     this.slides = slides;
-
     this.currentSlideNumber = 0;
     this.render();
     this.addEventListeners();
@@ -64,6 +64,7 @@ export default class Carousel {
         this.prev();
       }
     };
+
   }
 
   sub(ref) {

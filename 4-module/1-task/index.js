@@ -1,9 +1,13 @@
 function makeFriendsList(friends) {
-  const ul = document.createElement('ul');
+  const ul = document.createElement("ul");
 
-  ul.innerHTML = friends.map(item => `
+  ul.innerHTML = friends
+    .map(
+      (item) => `
       <li>${item.firstName} ${item.lastName}</li>
-  `).join('');
+  `
+    )
+    .join("");
 
   return ul;
 }
